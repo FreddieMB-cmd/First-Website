@@ -1039,12 +1039,30 @@
       e.target.reset();
     }
 
-    // Subtle nav scroll effect
+    // Nav scroll shadow
     const nav = document.querySelector('nav');
     window.addEventListener('scroll', () => {
       nav.style.boxShadow = window.scrollY > 50
         ? '0 2px 20px rgba(0,0,0,0.08)'
         : 'none';
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('nav-drawer');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    // Close drawer when a link is clicked
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.remove('open');
+        hamburger.classList.remove('open');
+      });
     });
   </script>
 
