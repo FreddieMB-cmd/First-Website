@@ -718,12 +718,13 @@
       .intro-strip { padding: 1.75rem 1.25rem; }
       .intro-strip p { font-size: 1rem; }
 
-      .hero { min-height: 100svh; align-items: flex-start; padding-top: 80px; padding-bottom: 1.5rem; }
+      /* Taller phones (e.g. iPhone 13 Pro Max, 926px) — original sizing */
+      .hero { min-height: 100svh; align-items: flex-end; padding-bottom: 3.5rem; }
       .hero-img { background-position: 20% center; }
-      .hero-content { margin: 0; padding: 1rem; width: 100%; }
-      .hero-tag { font-size: 0.65rem; letter-spacing: 0.04em; margin-bottom: 0.75rem; display: block; white-space: normal; }
-      .hero h1 { font-size: 1.75rem; line-height: 1.2; margin-bottom: 0.75rem; }
-      .hero p { font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.25rem; }
+      .hero-content { margin: 0; padding: 1.25rem; width: 100%; }
+      .hero-tag { font-size: 0.68rem; letter-spacing: 0.05em; margin-bottom: 1rem; display: block; white-space: normal; }
+      .hero h1 { margin-bottom: 1rem; }
+      .hero p { font-size: 1rem; margin-bottom: 1.5rem; }
       .hero-ctas { display: flex; flex-direction: column; gap: 0.75rem; }
       .hero-ctas .btn-primary,
       .hero-ctas .btn-secondary {
