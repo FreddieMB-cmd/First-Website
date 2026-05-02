@@ -13,7 +13,7 @@
       --white: #ffffff;
     }
 
-    html { scroll-behavior: smooth; font-size: 17px; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'Georgia', serif;
