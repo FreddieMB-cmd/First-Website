@@ -719,6 +719,7 @@
       .intro-strip p { font-size: 1rem; }
 
       .hero { min-height: 100svh; align-items: flex-end; padding-bottom: 3.5rem; }
+      .hero-img { background-position: 20% center; }
       .hero-content { margin: 0; padding: 1.25rem; }
       .hero-tag { font-size: 0.72rem; margin-bottom: 1rem; }
       .hero h1 { margin-bottom: 1rem; }
