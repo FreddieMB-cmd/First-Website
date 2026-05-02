@@ -255,7 +255,7 @@
     .about-text p {
       color: var(--text-light);
       margin-bottom: 1.25rem;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
     }
 
     .about-text p:last-of-type { margin-bottom: 2rem; }
